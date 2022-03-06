@@ -10,6 +10,11 @@ async def by(message: types.Message, state: FSMContext):
     await message.answer('Hozircha buyurtma berolmaysiz! ❌')
 
 
+@dp.message_handler(text='Buyurtma berish 🚚', state=anketa.savat)
+async def by(message: types.Message, state: FSMContext):
+    await message.answer('Hozircha buyurtma berolmaysiz! ❌')
 
 
-
+@dp.message_handler(text='Buyurtma berish 🚚', state=anketa.savat2)
+async def by(message: types.Message, state: FSMContext):
+    await message.answer('Hozircha buyurtma berolmaysiz! ❌')
