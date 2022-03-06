@@ -41,7 +41,6 @@ async def orqa1(message: types.Message, state: FSMContext):
     elif cat == "Sho'rva":
         await message.answer("Davom etamizmi? 👨🏻‍🍳🔥", parse_mode='html', reply_markup=shorva)
         await anketa.product.set()
-    await anketa.category.set()
 
 
 
