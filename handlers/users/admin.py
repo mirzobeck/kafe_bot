@@ -32,3 +32,9 @@ async def send_ad_to_all(message: types.Message):
 async def get_all_users(message: types.Message):
     db.delete_users()
     await message.answer("Baza tozalandi!")
+
+
+@dp.message_handler(text="/cleancart", user_id=ADMINS)
+async def get_all(message: types.Message):
+    db.delete_cart()
+    await message.answer("Karta bazasi tozalandi!")
